@@ -59,6 +59,16 @@
       cursor: pointer;
     }
 
+    .sidebar a {
+      text-decoration: none;
+      color: #000000;
+      display: block;
+    }
+
+    .sidebar a:visited {
+      color: #ff0000;          /* stays black after clicking */
+    }
+
     .next-steps {
       border: 1px solid #e5e7eb;
       border-radius: 10px;
@@ -191,13 +201,13 @@
     <aside class="sidebar">
       <h3>Contents</h3>
       <ul>
-        <li>About the Study</li>
+        <li><a href="#about-study">About the Study</a></li>
         <li>Why Participate?</li>
         <li>Your Rights</li>
-        <li>Who Can Participate?</li>
+        <li><a href="#who-can-participate">Who Can Participate?</a></li>
         <li>More Study Details</li>
-        <li>About the Research Centre</li>
-        <li>Study Location</li>
+        <li><a href="#research-centre">About the Research Centre</a></li>
+        <li><a href="#study-location">Study Location</a></li>
       </ul>
 
       <div class="next-steps">
@@ -216,7 +226,7 @@
     <main>
       <section class="about-study">
         <div>
-          <h3>About the Study</h3>
+          <h3 id="about-study">About the Study</h3>
           
           <img src="./Ad_Picture1.jpg" class="about-study-img" alt="Participant Image">
 
@@ -239,7 +249,7 @@
         </div>
       </section>
 
-      <h3>Who Can Participate?</h3>
+      <h3 id="who-can-participate">Who Can Participate?</h3>
       <ul class="participants">
         <li>People aged 18–75 diagnosed with type 2 diabetes mellitus for at least greater than 180 days</li>
         <li>Must have been on a stable daily dose of Metformin with or without SGLT2 inhibitors such as Jardiance, Jardiamet, Forxiga and Xigduo XR, etc.</li>
@@ -247,7 +257,7 @@
         <li>Must not have been diagnosed with diabetic retinopathy or maculopathy</li>
       </ul>
 
-      <h3>About the Research Centre</h3>
+      <h3 id="research-centre">About the Research Centre</h3>
 
       <div class="research-box red-box"></div>
       <p><strong><u>Macquarie University</u></strong><br>
@@ -268,7 +278,7 @@
         This study has been reviewed and approved by the HREC for the sites indicated above.
       </footer>
 
-      <h3>Study Location</h3>
+      <h3 id="study-location">Study Location</h3>
       <div class="map">
         <iframe style="border: 0;" src="https://www.google.com/maps/d/embed?mid=1yMhEKfpGzi1ZlW2SaAxB2UzYbCJn-A4&amp;ehbc=2E312F" width="100%" height="450" allowfullscreen="allowfullscreen"></iframe>
       </div>
